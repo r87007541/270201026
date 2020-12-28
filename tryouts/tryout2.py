@@ -1,7 +1,3 @@
-def func() :
-  return "x"
-  print("hahaha")
-if func() == "x" :
-  print("correct")
-else :
-  print("you have failed")
+x = 120
+y = int(input())
+print(y*5/12)

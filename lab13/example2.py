@@ -9,7 +9,7 @@ def binary_search(list,low,high,value) :
       return binary_search(list,low,mid-1,value)
 
     elif list[mid] < value  :
-      return binary_search(list,mid-1,high,value)
+      return binary_search(list,mid+1,high,value)
 
   else :
     return -1 
@@ -17,4 +17,4 @@ def binary_search(list,low,high,value) :
 
 list = [ 2, 3, 4, 10, 40 ]
 
-print(binary_search(list,0,len(list)-1,10))
+print(binary_search(list,0,len(list)-1,5))
